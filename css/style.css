@@ -1,0 +1,424 @@
+/*---------------------*/
+/*共通
+-----------------------*/
+body {
+    font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    line-height: 1.75;
+    font-size: 18px;
+    margin: 0 auto;
+}
+
+h2 p {
+    font-size: 24px;
+    font-weight: 800;
+    color: #222;
+    margin-top: 100px;
+}
+
+@media screen and (min-width:480px) { 
+    h2 p {
+    margin-top: 40px;
+    padding-bottom: 0;
+}
+}
+
+h3 {
+    font-size: 24px;
+    text-align: left;
+    line-height: 1;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.btn {
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    width: 120px;
+}
+
+.btn-primary {
+    background-color: #f9c;
+    border-color: #f9c;
+}
+
+.wrapper-contents {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.wrapper-contents p {
+        font-size: 14px;
+        text-align: left;
+    }
+@media screen and (min-width:480px) { 
+    .wrapper-contents {
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+    .wrapper-contents p {
+        font-size: 16px;
+    }
+}
+@media screen and (min-width:768px) and ( max-width:1024px) {
+    .wrapper-contents {
+        margin-right: 80px;
+        margin-left: 80px;
+    }
+    .wrapper-contents p {
+        font-size: 18px;
+    }
+}
+@media screen and (min-width:1024px) {
+    .wrapper-contents {
+        margin-right: 140px;
+        margin-left: 140px;
+    }
+    .wrapper-contents p {
+        font-size: 18px;
+    }
+}
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+    padding:0;
+    margin:0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/*---------------------*/
+/*ヘッダー
+-----------------------*/
+ レイアウトのためのCSS 
+
+p {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+
+/* 1文字ずつ出現させるためのCSS */
+
+.eachTextAnime span{opacity: 0;}
+.eachTextAnime.appeartext span{ animation:text_anime_on 1s ease-out forwards; }
+@keyframes text_anime_on {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.full {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url("../img/main-bg.jpg")
+    center / cover;
+}
+
+
+.h1 {
+  margin: 0;
+  position: absolute;
+  top: calc(50% - 0.5em);
+  width: 100%;
+  text-align: center;
+  line-height: 1;
+  font-size: 5vw !important;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  text-shadow: 2px 2px 2px #222;
+}
+
+section {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 5vw;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*---------------------*/
+/*ヘッダー
+-----------------------*/
+
+.navbar img {
+    width: 70%;
+}
+@media screen and (max-width:480px) { 
+    .navbar img {
+    width: 50%;
+}
+}
+
+.navbar-toggler {
+    background-color: #aaa;
+}
+.nav-item a {
+    color: #222 !important;
+}
+
+h1 p {
+    font-size: 32px;
+}
+
+.subtitle {
+    background-color: #fff;
+}
+
+.subtitle h2 {
+line-height: 1.5em;
+margin-bottom: 50px;
+}
+
+/*---------------------*/
+/* ABOUT
+-----------------------*/
+
+.about {
+    margin: 120px auto 0;
+}
+
+.about h2 {
+    color: #ffd61a !important;
+    font-size: 24px;
+    line-height: 1;
+    margin: 0 0 24px 0;
+}
+
+.about-text1 {
+    line-height: 1;
+    margin-bottom: 64px;
+}
+
+.about-text2 {
+    line-height: 1;
+    margin-bottom: 40px;
+}
+
+.slider {
+    margin-top: 80px;
+}
+
+/*---------------------*/
+/*スライダーのためのcss
+-----------------------*/
+.slider img {
+    width:100%;/*スライダー内の画像を横幅100%に*/
+    height:auto;
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+
+.slider .slick-slide {
+    margin:0 10px;/*スライド左右の余白調整*/
+}
+
+
+/* レイアウトのためのCSS */
+
+body{
+  background:#eee;
+}
+
+h2,p {
+    text-align:center;
+    padding:20px;
+}
+
+ul {
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: #333;
+}
+
+a:hover,
+a:active{
+  text-decoration: none;
+}
+
+
+/*---------------------*/
+/* COURSE
+-----------------------*/
+
+.course-contents {
+    margin-top: 100px;
+}
+
+@media screen and (min-width:768px) and ( max-width:1024px) {
+    .card-title {
+        font-size: 18px !important;
+    }       
+    .card-text {
+        font-size: 14px !important;
+        margin-top: 10px;
+    }      
+}
+
+.course h3 {
+    color: #fff;
+    font-weight: 800;
+    margin-left: 24px;
+}
+
+.course-contents p {
+    padding-left: 0;
+}
+
+.course h5 {
+    font-weight: 600;
+}
+
+.card-text {
+    padding-top: 0;
+}
+/*---------------------*/
+/* NEWS
+-----------------------*/
+
+..animate-wrap {
+  max-width: 900px;
+  margin: 500px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.news-col-sm {
+    margin-bottom: 20px;
+}
+
+.news h5 {
+        margin-left: 20px;
+        font-size: 16px !important;
+    }
+
+
+/*---------------------*/
+/* ACCESS
+/*---------------------*/
+
+.map {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    margin-bottom: 50px;
+}
+.map iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* カウントアップ */
+.lead {
+  padding: 20px;
+  text-align: center;
+}
+
+.box {
+  max-width:500px;
+  width:100%;
+  margin: 130px auto;
+  padding: 20px;
+  background:#fff;
+  text-align: center;
+}
+
+.count-size {
+  font-size:3rem;
+  font-weight: bold;
+  color: #f9c;
+}
+
+
+
+
+
+
+
+
+
+
+/*---------------------*/
+/* CONTACT
+/*---------------------*/
+
+.wrapper-contents form {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+/*---------------------*/
+/* トップへ戻るボタン
+/*---------------------*/
+
+#page-top {
+    width: 48px;
+    height: 48px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    font-size: 24px;
+    line-height: 24px;
+    background: #ccc;
+    color: #737373;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px -6px rgba(0,0,0,.5), 0 3px 10px -4px rgba(0,0,0,.2);
+}
+
+
+
+/*---------------------*/
+/* footer
+/*---------------------*/
+
+.footer {
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-color: #707070;
+    color: #fff;
+}
+
+.copyright {
+    font-size: 16px;
+}
+
+.infomation {
+    font-size: 14px;
+}
+.sns-btn {
+    font-size: 24px;
+    margin-left: 24px;
+}
+
+
+
+
+
+a:hover {
+    color: #f9c;
+}
